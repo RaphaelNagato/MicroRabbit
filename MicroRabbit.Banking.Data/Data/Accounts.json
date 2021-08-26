@@ -1,0 +1,12 @@
+[{
+  "AccountType" : "Current",
+  "AccountBalance" : 34500
+},
+  {
+    "AccountType" : "Savings",
+    "AccountBalance" : 32500
+  },
+  {
+    "AccountType" : "Current",
+    "AccountBalance" : 500
+  }]

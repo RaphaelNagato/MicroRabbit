@@ -19,8 +19,7 @@ namespace MicroRabbit.Infra.IoC
             services.AddScoped<IAccountService, AccountService>();
 
             services.AddScoped<IAccountRepository, AccountRepository>();
-
-            services.AddDbContext<BankingDbContext>();
+            
         }
     }
 }

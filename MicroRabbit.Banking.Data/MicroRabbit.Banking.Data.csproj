@@ -16,4 +16,10 @@
       <ProjectReference Include="..\MicroRabbit.Banking.Domain\MicroRabbit.Banking.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Data\Accounts.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
 </Project>
