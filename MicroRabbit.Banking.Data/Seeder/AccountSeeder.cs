@@ -21,9 +21,9 @@ namespace MicroRabbit.Banking.Data.Seeder
                 try
                 {
                     var buildDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-                    var filePath = buildDir + @"/Data/Accounts.json";
-                    var usersData = await File.ReadAllTextAsync(filePath);
-                    var accounts = JsonSerializer.Deserialize<IReadOnlyList<Account>>(usersData);
+                    var filePath = buildDir + @"/SeederData/Accounts.json";
+                    var accountsData = await File.ReadAllTextAsync(filePath);
+                    var accounts = JsonSerializer.Deserialize<IReadOnlyList<Account>>(accountsData);
 
                     await context.Accounts.AddRangeAsync(accounts);
                     await context.SaveChangesAsync();

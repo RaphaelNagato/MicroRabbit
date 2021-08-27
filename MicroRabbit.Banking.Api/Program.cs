@@ -26,6 +26,7 @@ namespace MicroRabbit.Banking.Api
                 Console.WriteLine(e);
                 throw;
             }
+            await host.RunAsync();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
