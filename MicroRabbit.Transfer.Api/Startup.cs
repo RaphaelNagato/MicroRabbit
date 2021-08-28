@@ -60,8 +60,13 @@ namespace MicroRabbit.Transfer.Api
 
             app.UseAuthorization();
 
+
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+
+
             ConfigureEventBus(app);
+
+
         }
 
         private void ConfigureEventBus(IApplicationBuilder app)
