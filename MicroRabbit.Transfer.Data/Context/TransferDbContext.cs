@@ -1,12 +1,12 @@
 using System.Reflection;
-using MicroRabbit.Banking.Domain.Models;
+using MicroRabbit.Transfer.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace MicroRabbit.Banking.Data.Context
+namespace MicroRabbit.Transfer.Data.Context
 {
-    public class BankingDbContext : DbContext
+    public class TransferDbContext : DbContext
     {
-        public BankingDbContext(DbContextOptions options): base(options)
+        public TransferDbContext(DbContextOptions options) : base(options)
         {
             
         }
@@ -17,6 +17,6 @@ namespace MicroRabbit.Banking.Data.Context
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
 
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<TransferLog> TransferLogs { get; set; }
     }
 }

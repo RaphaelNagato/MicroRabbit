@@ -1,0 +1,16 @@
+[{
+  "FromAccount" : 56758,
+  "ToAccount" : 34500,
+  "Amount" : 34.568
+},
+  {
+    "FromAccount" : 10000,
+    "ToAccount" : 15000,
+    "Amount" : 34.568
+  },
+  {
+    "FromAccount" : 15000,
+    "ToAccount" : 10000,
+    "Amount" : 34.567
+  }
+]
